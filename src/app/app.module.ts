@@ -14,6 +14,12 @@ import { ButtonModule } from 'primeng/button';
 import { ConfirmationService, MessageService } from 'primeng/api';
 import { HttpClientModule } from '@angular/common/http';
 
+import { registerLocaleData } from '@angular/common';
+import localeFr from '@angular/common/locales/fr';
+import localeFrExtra from '@angular/common/locales/extra/fr';
+
+registerLocaleData(localeFr, 'fr-FR', localeFrExtra);
+
 @NgModule({
   declarations: [AppComponent, UsersComponent, UserFormComponent],
   imports: [

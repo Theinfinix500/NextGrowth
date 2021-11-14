@@ -1,1 +1,129 @@
-<p>user-form works!</p>
+<!-- <ng-template pTemplate="content">
+  <img
+    [src]="'assets/showcase/images/demo/product/' + user.image"
+    [alt]="user.image"
+    class="product-image"
+    *ngIf="user.image"
+  />
+  <div class="p-field">
+    <label for="name">Name</label>
+    <input
+      type="text"
+      pInputText
+      id="name"
+      [(ngModel)]="user.name"
+      required
+      autofocus
+    />
+    <small class="p-error" *ngIf="submitted && !user.name"
+      >Name is required.</small
+    >
+  </div>
+  <div class="p-field">
+    <label for="description">Description</label>
+    <textarea
+      id="description"
+      pInputTextarea
+      [(ngModel)]="user.description"
+      required
+      rows="3"
+      cols="20"
+    ></textarea>
+  </div>
+  <div class="p-field">
+    <label for="inventoryStatus">Inventory Status</label>
+    <p-dropdown
+      [(ngModel)]="user.inventoryStatus"
+      inputId="inventoryStatus"
+      [options]="statuses"
+      placeholder="Select"
+    >
+      <ng-template let-option pTemplate="item">
+        <span [class]="'product-badge status-' + option.value">{{
+          option.label
+        }}</span>
+      </ng-template>
+    </p-dropdown>
+  </div>
+
+  <div class="p-field">
+    <label class="p-mb-3">Category</label>
+    <div class="p-formgrid p-grid">
+      <div class="p-field-radiobutton p-col-6">
+        <p-radioButton
+          id="category1"
+          name="category"
+          value="Accessories"
+          [(ngModel)]="user.category"
+        >
+        </p-radioButton>
+        <label for="category1">Accessories</label>
+      </div>
+      <div class="p-field-radiobutton p-col-6">
+        <p-radioButton
+          id="category2"
+          name="category"
+          value="Clothing"
+          [(ngModel)]="user.category"
+        ></p-radioButton>
+        <label for="category2">Clothing</label>
+      </div>
+      <div class="p-field-radiobutton p-col-6">
+        <p-radioButton
+          id="category3"
+          name="category"
+          value="Electronics"
+          [(ngModel)]="user.category"
+        >
+        </p-radioButton>
+        <label for="category3">Electronics</label>
+      </div>
+      <div class="p-field-radiobutton p-col-6">
+        <p-radioButton
+          id="category4"
+          name="category"
+          value="Fitness"
+          [(ngModel)]="user.category"
+        ></p-radioButton>
+        <label for="category4">Fitness</label>
+      </div>
+    </div>
+  </div>
+
+  <div class="p-formgrid p-grid">
+    <div class="p-field p-col">
+      <label for="price">Price</label>
+      <p-inputNumber
+        id="price"
+        [(ngModel)]="user.price"
+        mode="currency"
+        currency="USD"
+        locale="en-US"
+      >
+      </p-inputNumber>
+    </div>
+    <div class="p-field p-col">
+      <label for="quantity">Quantity</label>
+      <p-inputNumber id="quantity" [(ngModel)]="user.quantity"></p-inputNumber>
+    </div>
+  </div>
+</ng-template>
+
+<ng-template pTemplate="footer">
+  <button
+    pButton
+    pRipple
+    label="Cancel"
+    icon="pi pi-times"
+    class="p-button-text"
+    (click)="hideDialog()"
+  ></button>
+  <button
+    pButton
+    pRipple
+    label="Save"
+    icon="pi pi-check"
+    class="p-button-text"
+    (click)="saveProduct()"
+  ></button>
+</ng-template> -->

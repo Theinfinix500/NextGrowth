@@ -1,0 +1,53 @@
+:host {
+  ::ng-deep .p-datatable {
+    .p-datatable-thead > tr > th {
+      background: transparent;
+      font-weight: 700;
+
+      &:last-child,
+      &:nth-child(3) {
+        text-align: center;
+      }
+    }
+
+    .p-datatable-tbody > tr > td:last-child {
+      // padding: 0.4rem 1rem;
+      text-align: center;
+    }
+
+    .p-datatable-tbody > tr:last-child > td {
+      border-width: 0;
+    }
+  }
+}
+
+.card {
+  padding: 1.2rem;
+  background: white;
+  border-radius: 10px;
+}
+
+.status {
+  text-align: center !important;
+
+  span {
+    font-size: 12px;
+    padding: 0.2rem 1rem;
+    border-radius: 5px;
+    color: white;
+    width: 100px;
+    display: inline-block;
+  }
+}
+
+.valide {
+  background-color: #5be881;
+}
+
+.rejected {
+  background-color: #ff0000;
+}
+
+.on-validation {
+  background-color: #fdb64d;
+}
